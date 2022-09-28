@@ -19,7 +19,6 @@ cc_binary_host {
 
     cflags: [
         "-Wall",
-        "-Werror",
     ],
 
     sanitize: {

@@ -22,7 +22,6 @@ cc_defaults {
     name: "frameworks_rs_tests_cpp-api-defaults",
     shared_libs: ["liblog"],
     cflags: [
-        "-Werror",
         "-Wall",
         "-Wextra",
     ],

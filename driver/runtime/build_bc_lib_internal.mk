@@ -31,7 +31,7 @@ bc_clang := $(RS_DRIVER_CLANG_EXE)
 endif
 
 # Disable deprecated warnings, because we have to support even legacy APIs.
-bc_warning_flags := -Wno-deprecated -Werror
+bc_warning_flags := -Wno-deprecated -Wno-unused-but-set-parameter
 
 bc_cflags := -MD \
              $(RS_VERSION_DEFINE) \

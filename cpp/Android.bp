@@ -18,7 +18,6 @@ cc_library_static {
 
     cflags: [
         "-Wall",
-        "-Werror",
         "-Wno-unused-parameter",
         "-DRS_COMPATIBILITY_LIB",
     ],
@@ -54,12 +53,12 @@ cc_defaults {
     ],
 
     cflags: [
-        "-Werror",
         "-Wall",
         "-Wextra",
         "-Wno-deprecated-declarations",
         "-Wno-unused-parameter",
         "-Wno-unused-variable",
+        "-Wno-unused-but-set-parameter",
     ],
 
     // We need to export not just rs/cpp but also rs.  This is because

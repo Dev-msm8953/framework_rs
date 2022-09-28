@@ -11,12 +11,12 @@ cc_library_headers {
 cc_defaults {
     name: "rs_defaults",
     cflags: [
-        "-Werror",
         "-Wall",
         "-Wextra",
         "-Wno-deprecated-declarations",
         "-Wno-unused-parameter",
         "-Wno-unused-variable",
+        "-Wno-unused-but-set-parameter",
     ],
 }
 

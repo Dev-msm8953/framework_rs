@@ -20,11 +20,11 @@ cc_library_shared {
     ],
 
     cflags: [
-        "-Werror",
         "-Wall",
         "-Wextra",
         "-Wno-unused-parameter",
         "-DRS_COMPATIBILITY_LIB",
+        "-Wno-unused-but-set-parameter",
     ],
 
     header_libs: ["jni_headers"],
@@ -66,11 +66,11 @@ cc_library_shared {
     ],
 
     cflags: [
-        "-Werror",
         "-Wall",
         "-Wextra",
         "-Wno-unused-parameter",
         "-DRS_COMPATIBILITY_LIB",
+        "-Wno-unused-but-set-parameter",
     ],
 
     required: ["libRSSupport"],

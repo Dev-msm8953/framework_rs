@@ -171,13 +171,13 @@ cc_defaults {
     stl: "c++_static",
 
     cflags: [
-        "-Werror",
         "-Wall",
         "-Wextra",
         "-Wno-unused-parameter",
         "-Wno-unused-variable",
         "-Wno-overloaded-virtual",
         "-DRS_COMPATIBILITY_LIB",
+        "-Wno-unused-but-set-parameter",
 
         "-DGEMMLOWP_USE_STLPORT",
         // TODO: why isn't this picked up from the host GLOBAL_CFLAGS?

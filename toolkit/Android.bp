@@ -117,11 +117,11 @@ cc_library_shared {
 
     cflags: [
         "-Wthread-safety",
-        "-Werror",
         "-Wall",
         "-Wextra",
         "-Wno-unused-parameter",
         "-Wno-unused-variable",
+        "-Wno-unused-but-set-parameter",
     ],
 
     // TODO: Is this needed?
